@@ -1,11 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h3>Dette er bare en tom side</h3>
-</body>
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Læreportal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand fw-semibold" href="index.html">Læreportal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+        <div id="nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="oppgave1.html">Oppgave 1</a></li>
+            <li class="nav-item"><a class="nav-link" href="oppgave2.html">Oppgave 2</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="container text-center py-5">
+        <h1 class="display-5">Velkommen til denne læreportalen</h1>
+        <p class="lead text-muted">To praktiske oppgaver: GitHub Pages og Bootstrap.</p>
+        <div class="d-flex gap-2 justify-content-center">
+          <a class="btn btn-primary btn-lg" href="oppgave1.html">Start med Oppgave 1</a>
+          <a class="btn btn-outline-primary btn-lg" href="oppgave2.html">Gå til Oppgave 2</a>
+        </div>
+      </div>
+    </header>
+    <main class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Oppgave 1: Publisere nettside</h5>
+              <p class="card-text text-muted">Opprett <code>brukernavn.github.io</code>, legg inn <code>index.html</code>, aktiver Pages.</p>
+              <a href="oppgave1.html" class="btn btn-primary">Åpne oppgaven</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Oppgave 2: Lære Bootstrap</h5>
+              <p class="card-text text-muted">Bruk Bootstrap via CDN: knapp, kort og grid‑layout.</p>
+              <a href="oppgave2.html" class="btn btn-primary">Åpne oppgaven</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="border-top py-4 mt-5">
+      <div class="container d-flex justify-content-between align-items-center">
+        <small>© 2025 Læreportal</small>
+        <a href="index.html" class="small link-secondary">Hovedside</a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
