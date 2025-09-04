@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <title>HTML – grunnleggende tagger og struktur</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="p-4">
+  <div class="container">
+    <h1 class="mb-3">HTML – grunnleggende tagger og struktur</h1>
+    <p class="text-muted">Brukerside: <code>brukernavn.github.io</code>. Denne oppgaven hjelper deg steg for steg, med korte hint underveis.</p>
+
+    <h2 class="h5 mt-4">A. Før du starter</h2>
+    <ul>
+      <li>Du trenger en GitHub‑konto (brukernavnet ditt brukes i adressen).</li>
+      <li>På Mac kan du bruke <em>GitHub Desktop</em> (valgfritt) eller bare nettleseren.</li>
+      <li>Finn brukernavnet ditt (eks: <code>torethie</code>).</li>
+    </ul>
+
+    <h2 class="h5 mt-4">B. Målet</h2>
+    <ul>
+      <li>Opprett <strong>offentlig</strong> repo som heter nøyaktig: <code>brukernavn.github.io</code>.</li>
+      <li>Legg inn en enkel <code>index.html</code>.</li>
+      <li>Aktiver GitHub Pages for <strong>main / (root)</strong>.</li>
+      <li>Sjekk siden på <code>https://brukernavn.github.io/</code>.</li>
+    </ul>
+
+    <div class="alert alert-info small">
+      <strong>Hint:</strong> Repo-navnet må være <em>akkurat</em> brukernavnet ditt + <code>.github.io</code> (f.eks. <code>torethie.github.io</code>).
+    </div>
+
+    <h2 class="h5 mt-4">C. Steg for steg – Brukerside</h2>
+    <ol>
+      <li>Logg inn på <a href="https://github.com" target="_blank">github.com</a> → <em>New repository</em>.</li>
+      <li><strong>Repo name</strong>: skriv <code>brukernavn.github.io</code> (bytt ut med ditt). Eks: <code>torethie.github.io</code>.</li>
+      <li>Velg <strong>Public</strong> og huk av for <em>Add a README</em> → <em>Create repository</em>.</li>
+      <li><em>Add file</em> → <em>Create new file</em> → navn: <code>index.html</code> → lim inn minimumsinnholdet (under) → <em>Commit changes</em>.</li>
+      <li>Åpne <em>Settings</em> → <em>Pages</em>.</li>
+      <li><em>Build and deployment</em>: <strong>Source = Deploy from a branch</strong>. <strong>Branch = main</strong> (/<strong>root</strong>) → <em>Save</em>.</li>
+      <li>Vent 1–3 minutter, oppdater siden.</li>
+      <li>Gå til <code>https://brukernavn.github.io</code> (erstatt med ditt).</li>
+    </ol>
+
+    <div class="alert alert-secondary small">
+      <strong>Hint:</strong> Ser du ikke endringer? Gjør en ny commit (f.eks. legg til en linje) og åpne <code>?v=2</code> på slutten av URL‑en, f.eks. <code>https://brukernavn.github.io/?v=2</code>.
+    </div>
+
+    <h2 class="h5 mt-4">D. Minste mulige index.html</h2>
+<pre class="bg-light p-3 border rounded small"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="no"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;title&gt;Min side&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Velkommen til min første offentlige webside!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h2 class="h5 mt-4">E. Rask sjekkliste før levering</h2>
+    <ul>
+      <li>Repo-navn matcher nøyaktig: <code>brukernavn.github.io</code>.</li>
+      <li>Repo er <strong>Public</strong>.</li>
+      <li><code>index.html</code> ligger i <strong>rotmappen</strong>.</li>
+      <li>Pages er satt til <strong>Deploy from a branch → main /root</strong>.</li>
+      <li>Siden åpner på <code>https://brukernavn.github.io/</code>.</li>
+    </ul>
+
+    <h2 class="h5 mt-4">F. Vanlige feil → raske løsninger</h2>
+    <ul>
+      <li><strong>Feil repo‑navn</strong> (f.eks. <code>brukernavn-github.io</code> eller <code>github.no</code>) → Endre til <code>brukernavn.github.io</code>.</li>
+      <li><strong>Mangler index.html</strong> eller ligger feil → Legg <code>index.html</code> i <em>rot</em>.</li>
+      <li><strong>Pages peker til feil branch</strong> → Sett <em>main /root</em> i <em>Settings → Pages</em>.</li>
+      <li><strong>Forsinkelse/cache</strong> → Vent litt og oppdater (Mac: <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>).</li>
+    </ul>
+
+    <a href="index.html" class="btn btn-outline-secondary mt-3">← Tilbake</a>
+  </div>
+</body>
+</html>

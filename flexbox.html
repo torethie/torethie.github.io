@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flexbox – å lage en layout for nettsiden</title>
+    <meta name="description" content="Oppgave 2.6: Flexbox – lag en fleksibel layout for nettsiden din.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="visually-hidden-focusable skip-link" href="#innhold">Hopp til innhold</a>
+
+    <main class="container py-4" id="innhold">
+      <a href="index.html" class="btn btn-link px-0 mb-3">← Tilbake til oversikten</a>
+
+      <header class="mb-3">
+        <h1 class="h3 mb-1">Flexbox – å lage en layout for nettsiden</h1>
+        <p class="text-muted mb-0">Tema: Grunnleggende struktur (FlexBox)</p>
+      </header>
+
+      <section class="card mb-3">
+        <div class="card-body">
+          <h2 class="h5">Mål</h2>
+          <ul class="mb-0">
+            <li>Sette opp en fleksibel side-layout med <code>display: flex</code>.</li>
+            <li>Bruke <code>flex-wrap: wrap</code> slik at bokser flyter responsivt.</li>
+            <li>Forstå forholdet mellom <em>container</em> og <em>items</em> i Flexbox.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card mb-3">
+        <div class="card-body">
+          <h2 class="h5">Oppgave</h2>
+          <ol class="mb-0">
+            <li>Lag en <code>&lt;div&gt;</code> med klassen <code>flex-container</code>.</li>
+            <li>Lag minst tre <code>&lt;div&gt;</code>-bokser inni containeren (flere rader/kolonner er lov).</li>
+            <li>Gjør containeren til en flex-container med <code>display: flex</code> og <code>flex-wrap: wrap</code>.</li>
+            <li>Gi boksene fast minimumsbredde (f.eks. 250px) og litt margin/padding, så de bryter pent.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="card mb-3">
+        <div class="card-body">
+          <h2 class="h5">Startkode (HTML)</h2>
+<pre class="bg-light p-3 rounded border"><code>&lt;div class="flex-container"&gt;
+  &lt;div class="item"&gt;Boks 1&lt;/div&gt;
+  &lt;div class="item"&gt;Boks 2&lt;/div&gt;
+  &lt;div class="item"&gt;Boks 3&lt;/div&gt;
+  &lt;!-- Legg gjerne til flere --&gt;
+&lt;/div&gt;
+</code></pre>
+
+          <h2 class="h5 mt-3">Startkode (CSS)</h2>
+<pre class="bg-light p-3 rounded border"><code>.flex-container {
+  display: flex;        /* Aktiverer flex */
+  flex-wrap: wrap;      /* Lar elementer bryte til neste rad */
+  gap: 16px;            /* Avstand mellom boksene */
+}
+
+.flex-container .item {
+  flex: 1 1 250px;      /* vokser, krymper, min-bredde */
+  padding: 16px;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+</code></pre>
+          <p class="mb-0 small text-muted">Tips: Test ulike verdier på <code>flex</code> (f.eks. <code>0 1 300px</code> eller <code>2 1 240px</code>) for å se hvordan layouten endrer seg.</p>
+        </div>
+      </section>
+
+      <section class="card mb-4">
+        <div class="card-body">
+          <h2 class="h5">Ekstra utfordring</h2>
+          <ul class="mb-0">
+            <li>Lag en toppmeny som er en egen flex-rad (logo + navigasjon).</li>
+            <li>Lag en hovedseksjon som består av innhold + sidebar som bryter til én kolonne på mobil.</li>
+            <li>Bruk <code>justify-content</code> og <code>align-items</code> for å plassere elementene.</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="text-muted small">
+        <p class="mb-0">Kilder: W3Schools Flexbox.</p>
+      </footer>
+    </main>
+  </body>
+</html>

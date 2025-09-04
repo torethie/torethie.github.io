@@ -23,12 +23,28 @@ main { margin-bottom: 2rem; }
 }
 footer { margin-top: 6rem; }
 
-/* Skiller overskriftene i kortene tydeligere ut */
+/* Komfortabel luft i kortene */
+.card .card-body {
+  padding: 1.25rem 1.25rem 1.5rem; /* mer luft */
+}
+
+/* Litt større overskrifter og avstand */
 .card-body h3 {
-  font-weight: 700;        /* ekstra fet */
-  font-size: 1.1rem;       /* litt større */
-  color: #212529;          /* mørkere tekstfarge */
-  border-bottom: 1px solid #dee2e6; /* subtil bunnlinje */
-  padding-bottom: 4px;
-  margin-bottom: 8px;
+  font-size: 1.2rem;     /* øk fra 1.1 til 1.2 */
+  margin-bottom: 12px;   /* litt mer luft under */
+}
+
+/* Luft over knappen */
+.card-body .mt-auto {
+  margin-top: 12px;
+}
+
+
+
+/* Gjør kolonnene litt mer fleksible på store skjermer */
+@media (min-width: 1200px) {
+  .row [class*="col-"].col-lg-3 {
+    flex: 1 1 320px !important;  /* kan bli bredere ved behov */
+    max-width: 100% !important;
+  }
 }
