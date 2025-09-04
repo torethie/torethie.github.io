@@ -1,2 +1,1 @@
-// dette er et enkelt script.js
-alert ("Are you locked in?")
+// dette er et enkelt, og akkurat nå tomt script.js
