@@ -22,3 +22,13 @@ main { margin-bottom: 2rem; }
   main { margin-bottom: 4rem; }
 }
 footer { margin-top: 6rem; }
+
+/* Skiller overskriftene i kortene tydeligere ut */
+.card-body h3 {
+  font-weight: 700;        /* ekstra fet */
+  font-size: 1.1rem;       /* litt større */
+  color: #212529;          /* mørkere tekstfarge */
+  border-bottom: 1px solid #dee2e6; /* subtil bunnlinje */
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
