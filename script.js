@@ -1,1 +1,3 @@
-// dette er et enkelt, og akkurat nå tomt script.js
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Læreportal lastet');
+});
